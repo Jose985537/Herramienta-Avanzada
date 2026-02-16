@@ -1,4 +1,4 @@
-# Herramienta Avanzada v4.7 - By [Jose Gabriel]
+# Herramienta Avanzada - By [Jose Gabriel]
 
 Este es un script de Windows en formato `.bat` diseñado para realizar diversas tareas técnicas avanzadas en sistemas operativos Windows. La herramienta requiere permisos de administrador para su ejecución y ofrece un menú interactivo con múltiples opciones.
 
