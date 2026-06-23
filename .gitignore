@@ -1,0 +1,18 @@
+# Logs
+logs/
+*.log
+
+# Backup directories
+backups/
+
+# Temp files
+*.tmp
+*.vbs
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# PowerShell related
+*.ps1xml
+module.cache
