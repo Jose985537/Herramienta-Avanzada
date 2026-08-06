@@ -16,3 +16,9 @@ Desktop.ini
 # PowerShell related
 *.ps1xml
 module.cache
+
+# Version empaquetada y artefactos locales
+*.rar
+*.bak.*
+publicidad.txt
+AGENTS.md

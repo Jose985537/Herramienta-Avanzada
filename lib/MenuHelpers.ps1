@@ -126,7 +126,7 @@ function Invoke-Log {
     if ([string]::IsNullOrWhiteSpace($logDir)) {
         $logDir = Join-Path (Get-ScriptDirectory) "..\logs"
     } elseif (-not [IO.Path]::IsPathRooted($logDir)) {
-        $logDir = Join-Path (Get-ScriptDirectory) $logDir
+        $logDir = [IO.Path]::GetFullPath((Join-Path (Split-Path (Get-ScriptDirectory) -Parent) $logDir))
     }
     if (-not (Test-Path $logDir)) { New-Item -ItemType Directory -Path $logDir -Force | Out-Null }
     $logFile = Join-Path $logDir "app.log"

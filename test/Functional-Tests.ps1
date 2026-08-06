@@ -115,7 +115,7 @@ Write-Host "`n=== TEST 8: Hosts.ps1 ===`n" -ForegroundColor Cyan
 $hostsPath = "$env:SystemRoot\System32\drivers\etc\hosts"
 if (Test-Path $hostsPath) {
     $content = Get-Content $hostsPath -Raw -ErrorAction SilentlyContinue
-    Add-TestResult "hosts archivo legible" (($content -match 'localhost') -eq $true) "OK"
+    Add-TestResult "hosts archivo legible" ([bool]($content -match 'localhost')) "OK"
 } else { Add-TestResult "hosts archivo existe" $false "No encontrado" }
 Add-TestResult "Show-HostsMenu declarada" (Assert-Cmd "Show-HostsMenu") ""
 
